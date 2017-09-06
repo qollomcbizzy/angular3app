@@ -16,7 +16,12 @@ import {Component} from '@angular/core';
   `
 });
 export class Appcomponent{
-  public tasks:Task=new Task ("washing clothes ",0);
+  public tasks:Task []= [
+    new Task ("washing clothes ",0),
+    new Task ("programming ",1),
+    new Task ("listening to music ",2),
+    new Task ("watching series",3),
+];
 }
 export class Task {
   public done :boolean =false;
