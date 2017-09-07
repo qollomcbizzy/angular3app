@@ -18,6 +18,9 @@ import {Component} from '@angular/core';
   -->
   <h3>Task Description :{{selectedTask.description}}</h3>
   <h3>Task number : {{selectedTask.id}}</h3>
+  <div *ngIf ="selectedTask">
+  <!--*ngIf is a directive for dom the is used to hide and show-->
+  <h2>Edit Task</h2>
   <div>
   <!-- the [(ngModel)] keyword below is used for two-way binding i.e both input and output-->
   <label>Enter the description :</label>
@@ -28,6 +31,7 @@ import {Component} from '@angular/core';
   <input [(ngModel)]="selectedTask.id">
   <!--Added the button that shows we are done with the when clicked -->
   <button (click)="FinishedEditing()">Done</button>
+  </div>
   </div>
   </div>
   </div>
@@ -58,7 +62,7 @@ showDetails(clickedTask :Task){
 }
 //function for the clicked button
 FinishedEditing(){
-
+this.selectedTask = null;
 }
 }
 export class Task {
