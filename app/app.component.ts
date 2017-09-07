@@ -26,6 +26,8 @@ import {Component} from '@angular/core';
   <div >
   <label>Enter the Task Id:</label>
   <input [(ngModel)]="selectedTask.id">
+  <!--Added the button that shows we are done with the when clicked -->
+  <button (click)="FinishedEditing()">Done</button>
   </div>
   </div>
   </div>
@@ -53,6 +55,10 @@ export class Appcomponent{
 selectedTask : Task = this.tasks[0];
 showDetails(clickedTask :Task){
   this.selectedTask =clickedTask;
+}
+//function for the clicked button
+FinishedEditing(){
+
 }
 }
 export class Task {
