@@ -56,7 +56,8 @@ export class Appcomponent{
   }
 } ;*/
 //declared the word selectedTask to be of type Task and given the first task as the default
-selectedTask : Task = this.tasks[0];
+//we have set the task to null so us not to allow us to start editing when we load the app
+selectedTask : Task = null;
 showDetails(clickedTask :Task){
   this.selectedTask =clickedTask;
 }
