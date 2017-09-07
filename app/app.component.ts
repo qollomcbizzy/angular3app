@@ -15,9 +15,9 @@ import {Component} from '@angular/core';
   <h3>Edit task</h3>
   <!--
   below shows only the input and not the output
+  -->
   <h3>Task Description :{{selectedTask.description}}</h3>
   <h3>Task number : {{selectedTask.id}}</h3>
-  -->
   <div>
   <!-- the [(ngModel)] keyword below is used for two-way binding i.e both input and output-->
   <label>Enter the description :</label>
