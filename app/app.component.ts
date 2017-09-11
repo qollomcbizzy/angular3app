@@ -42,7 +42,7 @@ import {Component} from '@angular/core';
   </div>
   `
 })
-export class Appcomponent{
+export class AppComponent{
   public tasks:Task []= [
     new Task ("washing clothes ",0),
     new Task ("programming ",1),

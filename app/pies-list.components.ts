@@ -14,6 +14,6 @@ import {Component} from '@angular@core';
   </div>
   `
 })
-export class PiesListcomponent{
+export class PiesListComponent{
 favoritepie :string[]=["mangoes","bananas","apple","peas"];
 }
