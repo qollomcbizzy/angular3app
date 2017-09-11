@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {Task} from './task.model';
 @Component({
   selector : 'my-app',
   template: `
@@ -44,13 +45,6 @@ import {Component} from '@angular/core';
   </div>
   `
 })
-export class AppComponent{
-  public tasks:Task []= [
-    new Task ("washing clothes ",0),
-    new Task ("programming ",1),
-    new Task ("listening to music ",2),
-    new Task ("watching series",3),
-];
 //function for the dostuff()
 /*doStuff(clickedTask : Task) {
   if(clickedTask.done == true){
@@ -62,6 +56,7 @@ export class AppComponent{
 } ;*/
 //declared the word selectedTask to be of type Task and given the first task as the default
 //we have set the task to null so us not to allow us to start editing when we load the app
+export class AppComponent{
 selectedTask : Task = null;
 showDetails(clickedTask :Task){
   this.selectedTask =clickedTask;
@@ -70,11 +65,4 @@ showDetails(clickedTask :Task){
 FinishedEditing(){
 this.selectedTask = null;
 }
-}
-export class Task {
-  public done :boolean =false;
-  constructor(public description :string,public id :number)
-  {
-
-  }
 }
