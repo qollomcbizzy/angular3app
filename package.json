@@ -1,0 +1,22 @@
+{
+  "name": "angular3",
+  "version": "1.0.0",
+  "description": "\"mine\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"/error test not found/\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qollomcbizzy/angular3app.git"
+  },
+  "keywords": [
+    "\"\""
+  ],
+  "author": "mcbizzy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qollomcbizzy/angular3app/issues"
+  },
+  "homepage": "https://github.com/qollomcbizzy/angular3app#readme"
+}
