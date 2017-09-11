@@ -1,4 +1,4 @@
-import {Component,Input} from '@angular/core';
+import {Component,Input,Output,EventEmitter} from '@angular/core';
 import {Task} from './task.model';
 @Component
 ({
@@ -7,10 +7,11 @@ import {Task} from './task.model';
    <div class="row">
    <div class="tasked" *ngFor="let currentTask of childTaskList">
    <h3>{{currentTask.description}}</h3>
-   <button class="btn btn-primary" (click)="showDetails(currentTask)">Edit</button>
+   <button class="btn btn-primary" (click)="EditButtonClicked(currentTask)">Edit</button>
    </div>
    `
 })
 export class TaskListComponent{
-  @Input() childTaskList :Task[];
+  @Input () childTaskList :Task[];
+  @Output () clickSender = new EventEmitter();
 }
