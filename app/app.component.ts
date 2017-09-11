@@ -35,6 +35,9 @@ import {Component} from '@angular/core';
   </div>
   </div>
   </div>
+  <div class="col-md-3 ">
+  <pies></pies>
+  </div>
   </div>
   </div>
   `
