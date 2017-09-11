@@ -18,8 +18,3 @@ export class TaskListComponent{
     new Task ("watching series",3),
   ];
 }
-export class Task{
-  constructor(public description :string,public id :number){
-    
-  }
-}
