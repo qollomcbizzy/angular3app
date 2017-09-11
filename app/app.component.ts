@@ -57,6 +57,12 @@ import {Task} from './task.model';
 //declared the word selectedTask to be of type Task and given the first task as the default
 //we have set the task to null so us not to allow us to start editing when we load the app
 export class AppComponent{
+  public MaterTaskList:Task []= [
+    new Task ("washing clothes ",0),
+    new Task ("programming ",1),
+    new Task ("listening to music ",2),
+    new Task ("watching series",3),
+  ];
 selectedTask : Task = null;
 showDetails(clickedTask :Task){
   this.selectedTask =clickedTask;

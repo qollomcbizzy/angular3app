@@ -10,9 +10,9 @@ import {TaskListComponent} from './Task-list.component'
   FormsModule
 ],
 declaration : [
+  AppComponent,
   PiesListComponent,
   TaskListComponent,
-  AppComponent,
 ],
 bootstrap : [AppComponent]
 })
