@@ -41,7 +41,7 @@ import {Component} from '@angular/core';
   </div>
   </div>
   `
-});
+})
 export class Appcomponent{
   public tasks:Task []= [
     new Task ("washing clothes ",0),
