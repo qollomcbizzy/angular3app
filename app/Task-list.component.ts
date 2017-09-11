@@ -12,10 +12,5 @@ import {Task} from './task.model';
    `
 })
 export class TaskListComponent{
-  public tasks:Task []= [
-    new Task ("washing clothes ",0),
-    new Task ("programming ",1),
-    new Task ("listening to music ",2),
-    new Task ("watching series",3),
-  ];
+  @import () childTaskList :Task[];
 }
