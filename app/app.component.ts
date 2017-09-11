@@ -6,12 +6,17 @@ import {Component} from '@angular/core';
   <div class="row">
   <div class="col-md-6 col-md-offset-2">
   <h2>my Second angular js </h2>
+  <!--below are the child components-->
+  <pies></pies>
+  <task-list></task-list>
   <!--loop for the task-->
+  <!--
   <div class="tasks" (click)="showDetails(currentTask)" *ngFor="let currentTask of tasks">
-  <!--(click)="doStuff()" shows the event emitter for clicking which is the output binding -->
+  //(click)="doStuff()" shows the event emitter for clicking which is the output binding
   <h3>{{currentTask.description}}</h3><br/>
   </div>
   <div class="row">
+  -->
   <h3>Edit task</h3>
   <!--
   below shows only the input and not the output
@@ -34,9 +39,6 @@ import {Component} from '@angular/core';
   </div>
   </div>
   </div>
-  </div>
-  <div class="col-md-3 ">
-  <pies></pies>
   </div>
   </div>
   </div>
